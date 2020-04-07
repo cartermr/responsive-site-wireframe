@@ -63,6 +63,7 @@ nav.navigation {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  position: fixed;
 }
 nav.navigation .logo {
   display: flex;
@@ -164,7 +165,13 @@ footer {
 }
 
 @media (max-width: 768px) {
-  /* nav.navigation ul.show-mobile-nav {
+  nav.navigation ul {
+    display: none;
+  }
+  .services__container {
+    flex-direction: column;
+  }
+  nav.navigation ul.show-mobile-nav {
     display: flex;
     flex-direction: column;
     height: 100vh;
@@ -177,5 +184,5 @@ footer {
     color: white;
     font-size: 2em;
     box-shadow: -7px -1px 13px 0px rgba(0, 0, 0, 0.22);
-  } */
+  }
 }
