@@ -10,16 +10,6 @@ function openMobileNav () {
   hamburger.classList.toggle('hamburger-close')
 }
 
-let adjustNavSizeOnScroll = () => {
-  let navbar = document.querySelector('nav.navigation')
-  if (window.scrollY > 100) {
-    navbar.classList.add('scroll-nav')
-  } else {
-    navbar.classList.remove('scroll-nav')
-  }
-}
-window.addEventListener('scroll', adjustNavSizeOnScroll)
-
 // create an eventlistener for scroll
 // in function, get navbar element
 // window scrollY

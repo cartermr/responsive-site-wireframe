@@ -41,8 +41,6 @@ body {
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-  background: rgb(151,56,175);
-background: linear-gradient(197deg, rgba(151,56,175,1) 0%, rgba(148,187,233,1) 71%);
 }
 .maxWidth_1024 {
   max-width: 1024px;
@@ -66,7 +64,6 @@ nav.navigation {
   justify-content: space-between;
   align-items: center;
   position: fixed;
-  transition: all 350ms ease;
 }
 nav.navigation .logo {
   display: flex;
@@ -76,12 +73,8 @@ nav.navigation .logo {
 nav.navigation .logo i {
   margin-right: .4em;
   font-size: 2.5em;
-  transition: font-size 350ms ease;
 }
-nav.navigation.scroll-nav .logo h1{
-  font-size: inherit;
-  transition: font-size 350ms ease;
-}
+
 nav.navigation ul {
   display: flex;
 }
@@ -105,19 +98,6 @@ nav.navigation ul li a:hover {
   color: #FF806F;
 }
 
-/* /// scroll nav //// */
-nav.navigation.scroll-nav {
-  height: 34px;
-}
-nav.navigation.scroll-nav .logo i{
-  font-size: 1.5em;
-}
-nav.navigation.scroll-nav .logo h1{
-  font-size: 1.15em;
-}
-nav.navigation.scroll-nav ul li {
-  font-size: .8em;
-}
 
 /* //// HERO ///// */
 .hero {
